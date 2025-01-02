@@ -1,6 +1,6 @@
-# Abaddon
+# Cain
 
-**Abaddon** is a powerful raid bot developed in Go, designed for automating mass actions on Discord servers. It includes features like channel deletion, user removal, and server takeover. **Use with caution and only in environments where you have permission.**
+**Cain** is a powerful raid bot developed in Go, designed for automating mass actions on Discord servers. It includes features like channel deletion, user removal, and server takeover. **Use with caution and only in environments where you have permission.**
 
 ## Features
 
@@ -13,8 +13,8 @@
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/abaddon.git
-   cd abaddon
+   git clone https://github.com/yourusername/cain.git
+   cd cain
    ```
 
 2. Install dependencies:
@@ -36,13 +36,13 @@
 2. Run the bot:
 
    ```bash
-   ./abaddon
+   ./cain
    ```
 
 3. Invite the bot to your Discord server.
 
 4. Use the commands to initiate actions:
-   - `/fuckserver` - Deletes all channels.
+   - `/destroy` - Deletes all channels.
    - `/conquer` - Takes over the server by creating channels and sending messages.
    - `/kickall` - Kicks all members from the server.
 
